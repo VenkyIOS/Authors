@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-class AuthorsListViewModel: ObservableObject {
+public class AuthorsListViewModel: ObservableObject {
     private var getAuthorsSubscriber: AnyCancellable?
     @Published var authors = [Author]()
     

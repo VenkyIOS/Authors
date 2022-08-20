@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Author: Decodable, Identifiable {
+public struct Author: Decodable, Identifiable {
      var id: String?
      var author: String?
      var width: Int?

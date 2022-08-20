@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum APIRequest {
+public enum APIRequest {
     case getAuthors
 }
 

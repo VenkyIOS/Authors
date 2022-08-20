@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import SDWebImageSwiftUI
 
-struct AuthorCell: View {
+public struct AuthorCell: View {
     var author: Author
     var cellHeight: CGFloat
     init(_ author: Author, maxHeight: CGFloat = CGFloat(10)) {
