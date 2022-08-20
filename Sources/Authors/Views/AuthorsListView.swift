@@ -13,7 +13,7 @@ public struct AuthorsListView: View {
     init() {
         viewModel.fetchAuthors()
     }
-    var body: some View {
+    public var body: some View {
         GeometryReader { geometry in
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 5) {
