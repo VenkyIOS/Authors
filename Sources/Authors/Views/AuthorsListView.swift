@@ -10,7 +10,7 @@ import SwiftUI
 public struct AuthorsListView: View {
     @ObservedObject var viewModel = AuthorsListViewModel()
 
-    init() {
+    public init() {
         viewModel.fetchAuthors()
     }
     public var body: some View {
