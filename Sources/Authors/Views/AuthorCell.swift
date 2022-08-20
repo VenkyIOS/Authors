@@ -18,7 +18,7 @@ public struct AuthorCell: View {
     }
     @State var frame: CGSize = CGSize(width: 1, height: 1)
 
-    var body: some View {
+    public var body: some View {
         let size = sizeOfImgForHeight(author, maxHeight: cellHeight)
         return VStack {
             if let url = URL(string: author.download_url ?? "") {

@@ -8,7 +8,7 @@
 import Foundation
 
 public struct Author: Decodable, Identifiable {
-     var id: String?
+    public var id: String?
      var author: String?
      var width: Int?
      var height: Int?
