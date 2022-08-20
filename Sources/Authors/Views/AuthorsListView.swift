@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AuthorsListView: View {
+public struct AuthorsListView: View {
     @ObservedObject var viewModel = AuthorsListViewModel()
 
     init() {
