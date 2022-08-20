@@ -19,6 +19,7 @@ public struct AuthorsListView: View {
                 HStack(spacing: 5) {
                     ForEach(viewModel.authors) { author in
                         AuthorCell(author, maxHeight: geometry.size.height)
+                            .scaleEffect(author.id == "10" ? 2 : 1)
                     }
                 }
             }
