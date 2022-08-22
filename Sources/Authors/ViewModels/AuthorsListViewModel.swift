@@ -11,7 +11,8 @@ import Combine
 public class AuthorsListViewModel: ObservableObject {
     private var getAuthorsSubscriber: AnyCancellable?
     @Published var authors = [Author]()
-    
+    @Published var previewAuthor: Author?
+
     func fetchAuthors() {
         
         var authorsPublisher: AnyPublisher<[Author], Error>?

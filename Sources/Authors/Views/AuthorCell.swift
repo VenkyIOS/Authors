@@ -12,6 +12,7 @@ import SDWebImageSwiftUI
 public struct AuthorCell: View {
     var author: Author
     var cellHeight: CGFloat
+    @State var tap = false
     init(_ author: Author, maxHeight: CGFloat = CGFloat(10)) {
         self.author = author
         self.cellHeight = maxHeight
@@ -30,6 +31,7 @@ public struct AuthorCell: View {
                 Text(author.author ?? "").lineLimit(1)
             }
         }
+
     }
 
     func sizeOfImgForHeight(_ author: Author, maxHeight: CGFloat) -> CGSize {
